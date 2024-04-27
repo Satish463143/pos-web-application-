@@ -1,0 +1,785 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background: #000;
+  color: #eeeeee;
+}
+
+.container {
+  max-width: 350px;
+  margin: auto;
+}
+
+#eye {
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+  position: relative;
+  left: 280px;
+  bottom: 40px;
+}
+#eye::after {
+  content: "";
+  width: 22px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  left: 1px;
+  top: 8px;
+  rotate: -45deg;
+}
+
+#confirmEye {
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+  position: relative;
+  left: 280px;
+  bottom: 40px;
+}
+#confirmEye::after {
+  content: "";
+  width: 22px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  left: 1px;
+  top: 8px;
+  rotate: -45deg;
+}
+
+#loginEye {
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+  position: relative;
+  left: 300px;
+  bottom: 37px;
+}
+#loginEye::after {
+  content: "";
+  width: 22px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  left: 1px;
+  top: 8px;
+  rotate: -45deg;
+}
+
+.signup-form {
+  width: 90%;
+  margin: auto;
+}
+.signup-form #signupForm {
+  padding-top: 20px;
+}
+.signup-form #signupForm input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.signup-form #signupForm button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(94, 211, 83);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.signup-form #signupForm button:hover {
+  background-color: green;
+}
+.signup-form #signupForm .error-message {
+  color: #ff0000;
+  margin-top: 10px;
+}
+.signup-form #signupForm .error-password {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+#login_form label {
+  width: 90%;
+  margin-left: 5%;
+}
+#login_form input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+}
+#login_form button {
+  width: 90%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  margin-left: 5%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#login_form button:hover {
+  background-color: green;
+}
+#login_form #error_message {
+  text-align: center;
+  margin: 10px;
+  color: red;
+}
+
+.box {
+  border-radius: 10px;
+  width: 100%;
+  height: 80vh;
+  margin-top: 10vh;
+  box-shadow: rgba(206, 208, 209, 0.12) 0px 2px 4px 0px, rgba(176, 216, 233, 0.32) 0px 2px 16px 0px;
+  position: relative;
+}
+.box .box_cont {
+  text-align: center;
+  position: absolute;
+  top: 40vh;
+}
+.box .box_cont .box_cont_1 {
+  margin-left: 25px;
+}
+.box .box_cont .box_cont_1 a {
+  width: 100%;
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: green;
+  padding: 15px 120px;
+  border-radius: 30px;
+}
+.box .box_cont .box_cont_2 {
+  margin-left: 25px;
+  margin-top: 40px;
+}
+.box .box_cont .box_cont_2 a {
+  width: 90%;
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: green;
+  padding: 15px 120px;
+  border-radius: 30px;
+}
+
+.entry_box {
+  border-radius: 10px;
+  width: 100%;
+  height: 80vh;
+  margin-top: 10vh;
+  box-shadow: rgba(206, 208, 209, 0.12) 0px 2px 4px 0px, rgba(176, 216, 233, 0.32) 0px 2px 16px 0px;
+  position: relative;
+}
+.entry_box .entry_box_cont {
+  text-align: center;
+  position: absolute;
+  z-index: 99;
+}
+.entry_box .entry_box_cont .entry_box_cont_1 {
+  margin: 35px 60px;
+}
+.entry_box .entry_box_cont .entry_box_cont_1 a {
+  width: 100%;
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: green;
+  padding: 15px 60px;
+  border-radius: 30px;
+}
+.entry_box .entry_box_cont .entry_box_cont_2 {
+  margin: 45px 60px;
+}
+.entry_box .entry_box_cont .entry_box_cont_2 a {
+  width: 100%;
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: rgba(9, 238, 20, 0.12) 0px 0px 4px 0px, rgba(0, 252, 42, 0.32) 0px 2px 16px 0px;
+  padding: 15px 56px;
+  border-radius: 30px;
+}
+.entry_box .entry_box_cont .entry_box_cont_3 {
+  margin: 45px 60px;
+}
+.entry_box .entry_box_cont .entry_box_cont_3 a {
+  width: 100%;
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: rgba(9, 238, 20, 0.12) 0px 2px 4px 0px, rgba(0, 252, 42, 0.32) 0px 2px 16px 0px;
+  padding: 15px 68px;
+  border-radius: 30px;
+}
+.entry_box .entry_box_cont .entry_box_cont_4 {
+  margin: 45px 60px;
+}
+.entry_box .entry_box_cont .entry_box_cont_4 a {
+  width: 100%;
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: rgba(9, 238, 20, 0.12) 0px 2px 4px 0px, rgba(0, 252, 42, 0.32) 0px 2px 16px 0px;
+  padding: 15px 74px;
+  border-radius: 30px;
+}
+.entry_box .entry_box_cont .entry_box_cont_5 a {
+  width: 100%;
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: rgba(9, 238, 20, 0.12) 0px 2px 4px 0px, rgba(0, 252, 42, 0.32) 0px 2px 16px 0px;
+  padding: 15px 56px;
+  border-radius: 30px;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 70% 15% 15%;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #382f2f;
+}
+.title .titleName {
+  margin: 16px 20px;
+}
+.title .titleName h1 {
+  font-size: 30px;
+}
+.title .tittleBoutton {
+  margin-top: 22px;
+}
+.title .tittleBoutton span {
+  cursor: pointer;
+  color: green;
+}
+.title .tittleBoutton span i {
+  font-size: 20px;
+}
+
+#logout_box {
+  font-style: italic;
+  width: 90%;
+  height: 80px;
+  top: 40%;
+  left: 18px;
+  display: none;
+  border-radius: 10px;
+  z-index: 9999;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2549019608), inset -20px -20px 60px rgba(255, 255, 255, 0.2509803922);
+}
+#logout_box p {
+  padding: 15px 10px;
+}
+#logout_box .logout_box_button {
+  text-align: end;
+}
+#logout_box .logout_box_button span {
+  font-weight: 500;
+  cursor: pointer;
+}
+#logout_box .logout_box_button a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px;
+}
+
+.border_box_title {
+  display: grid;
+  grid-template-columns: 15% 55% 15% 15%;
+  justify-content: center;
+  width: 100%;
+  height: 14%;
+  border-bottom: 1px solid #382f2f;
+}
+.border_box_title .titleName {
+  margin: 14px 0;
+}
+.border_box_title .titleName h1 {
+  font-size: 30px;
+}
+.border_box_title .tittleBoutton {
+  margin: 20px 10px;
+}
+.border_box_title .tittleBoutton span, .border_box_title .tittleBoutton a {
+  cursor: pointer;
+  color: green;
+}
+.border_box_title .tittleBoutton span i, .border_box_title .tittleBoutton a i {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar {
+  overflow-x: scroll;
+}
+.navbar nav {
+  width: 185%;
+  background-color: green;
+}
+.navbar nav ul {
+  padding: 5px 0;
+}
+.navbar nav ul li {
+  list-style: none;
+  display: inline;
+}
+.navbar nav ul li .active {
+  color: rgb(202, 194, 194) !important;
+}
+.navbar nav ul li :hover {
+  color: rgb(202, 194, 194);
+}
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.search_btn {
+  text-align: center;
+}
+.search_btn p {
+  margin: 20px 0px 10px 0px;
+}
+.search_btn input {
+  width: 80%;
+  height: 35px;
+  border-radius: 10px;
+  background: none;
+  box-shadow: rgba(9, 238, 20, 0.12) 0px 2px 4px 0px, rgba(0, 252, 42, 0.32) 0px 2px 16px 0px;
+  border: none;
+  color: #fff;
+  padding-left: 10px;
+}
+.search_btn .submit {
+  width: 80%;
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: inset -20px -20px 60px rgba(255, 255, 255, 0.2509803922), 20px 20px 60px rgba(0, 0, 0, 0.2549019608);
+  padding: 15px 56px;
+  border-radius: 30px;
+  background: green;
+  cursor: pointer;
+  border: none;
+}
+
+.message .none_result {
+  margin-top: 20px;
+  text-align: center;
+}
+.message .none_result i {
+  font-size: 40px;
+}
+.message .none_result p {
+  padding-top: 5px;
+}
+
+.order_form {
+  width: 95%;
+  margin: 10px auto;
+  overflow-y: scroll;
+  height: 80%;
+}
+.order_form form i {
+  color: #fff;
+  position: relative;
+  left: -15px;
+}
+.order_form form select {
+  padding-left: 10px;
+  width: 95%;
+  height: 25px;
+  margin-bottom: 15px;
+  background: grey;
+  border: none;
+  border-radius: 5px;
+}
+.order_form form select::-ms-value {
+  color: #fff;
+}
+.order_form form input {
+  padding-left: 10px;
+  width: 95%;
+  height: 25px;
+  margin-bottom: 15px;
+  background: grey;
+  border: none;
+  border-radius: 5px;
+}
+.order_form form input::-moz-placeholder {
+  color: #fff;
+}
+.order_form form input::placeholder {
+  color: #fff;
+}
+.order_form form textarea {
+  padding-left: 10px;
+  width: 95%;
+  height: 25px;
+  margin-bottom: 15px;
+  background: grey;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.order_form form button {
+  width: 95%;
+  padding: 10px;
+  background-color: rgb(94, 211, 83);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.order_form form button:hover {
+  background-color: green;
+}
+
+.product_add {
+  width: 95%;
+  margin: 10px auto;
+  overflow-y: scroll;
+  height: 80%;
+}
+.product_add form input {
+  padding-left: 10px;
+  width: 95%;
+  height: 25px;
+  margin-bottom: 15px;
+  background: grey;
+  border: none;
+  border-radius: 5px;
+}
+.product_add form input::-moz-placeholder {
+  color: #fff;
+}
+.product_add form input::placeholder {
+  color: #fff;
+}
+.product_add form button {
+  width: 95%;
+  padding: 10px;
+  background-color: rgb(94, 211, 83);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.product_add form button:hover {
+  background-color: green;
+}
+
+#show_contact {
+  display: none;
+}
+
+.contact {
+  width: 95%;
+  margin-left: 10px;
+  height: auto;
+  background-color: #000;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2549019608), inset -20px -20px 60px rgba(255, 255, 255, 0.2509803922);
+  position: absolute;
+  top: 150px;
+  border-radius: 10px;
+  z-index: 9999;
+}
+.contact .cotact_text {
+  padding: 10px;
+  text-align: center;
+}
+.contact .cotact_text p {
+  color: grey;
+}
+.contact .cotact_text p span {
+  font-style: italic;
+  font-weight: 700;
+}
+.contact .contct_photo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+}
+.contact .contct_photo .contct_photo_1 {
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.contact .contct_photo .contct_photo_1 img {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+}
+.contact .contct_photo .contct_photo_1 .contct_photo_box {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  border-radius: 50%;
+}
+.contact .contct_photo .contct_photo_1 .contct_photo_box a {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 13px;
+}
+.contact .contact_copyrght p {
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: grey;
+}
+
+.product_add {
+  width: 95%;
+  margin: 10px auto;
+  overflow-y: scroll;
+  height: 80%;
+}
+.product_add form select {
+  padding-left: 10px;
+  width: 95%;
+  height: 25px;
+  margin-bottom: 15px;
+  background: grey;
+  border: none;
+  border-radius: 5px;
+}
+
+.product {
+  width: 95%;
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.product .product_grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  justify-content: center;
+  width: 100%;
+  font-size: 15px;
+}
+.product .product_grid .product_img {
+  width: 100%;
+  margin: 10px 0 0 10px;
+}
+.product .product_grid .product_img img {
+  width: 95%;
+  border-radius: 5px;
+  height: auto;
+}
+.product .product_grid .product_detail {
+  width: 100%;
+  border-left: 2px solid gray;
+  margin: 10px;
+}
+.product .product_grid .product_detail h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+.product .product_grid .product_detail p {
+  margin-left: 10px;
+}
+.product .product_grid .product_detail .product_size {
+  margin-left: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+}
+.product .product_edit {
+  width: 95%;
+  height: 30px;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2549019608), inset -20px -20px 60px rgba(255, 255, 255, 0.2509803922);
+  margin: 5px auto;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+}
+.product .product_edit .product_edit_button {
+  margin: 5px;
+  text-align: center;
+}
+.product .product_edit .product_edit_button a {
+  padding-top: 5px;
+  color: rgb(238, 55, 55);
+  transition: 0.4s;
+}
+.product .product_edit .product_edit_button a :hover {
+  color: red;
+}
+.product .product_edit .product_delete_button {
+  text-align: center;
+  border-left: 2px solid gray;
+  margin: 5px;
+}
+.product .product_edit .product_delete_button a {
+  color: rgb(238, 55, 55);
+  transition: 0.4s;
+}
+.product .product_edit .product_delete_button a :hover {
+  color: red;
+}
+
+.order {
+  width: 100%;
+  height: 75%;
+  overflow-y: scroll;
+}
+.order .order_details {
+  width: 95%;
+  background: rgba(121, 119, 119, 0.5);
+  border-radius: 5px;
+  margin: 0 auto 10px auto;
+  padding: 7px;
+}
+.order .order_details .order_grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-content: center;
+  width: 100%;
+  font-size: 13px;
+}
+.order .order_details .order_grid .order_grid_detail {
+  width: 100%;
+  border-left: 2px solid #fff;
+  margin-bottom: 5px;
+}
+.order .order_details .order_grid .order_grid_detail p {
+  margin-left: 10px;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+}
+.order .order_details .order_btn {
+  display: grid;
+  grid-template-columns: 20% 20% 35% 25%;
+  justify-content: center;
+  width: 100%;
+  font-size: 14px;
+  margin-left: 4px;
+}
+.order .order_details .order_btn .order_btn_size {
+  width: 90%;
+}
+.order .order_details .order_btn .order_btn_size p {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  font-size: 13px;
+}
+.order .order_details .order_btn .order_btn_location {
+  width: 90%;
+}
+.order .order_details .order_btn .order_btn_location p {
+  background: #e47373;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  font-size: 13px;
+}
+.order .order_details .order_btn .order_btn_status {
+  width: 90%;
+}
+.order .order_details .order_btn .order_btn_status p {
+  background: #6a4deb;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  font-size: 13px;
+}
+.order .order_details hr {
+  margin-top: 3px;
+  color: gray;
+}
+.order .order_details .order_by p {
+  color: gray;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.product_details {
+  width: 100%;
+  height: 83%;
+  overflow-y: scroll;
+  padding: 10px 2%;
+}
+.product_details h4 {
+  margin-left: 10px;
+}
+.product_details .product_details_cont {
+  padding: 5px;
+  font-size: 14px;
+}
+.product_details .product_details_cont table {
+  width: 100%;
+}
+.product_details .product_details_cont table td {
+  width: 50%;
+  padding: 5px 0;
+}
+.product_details .status_btn {
+  width: 100%;
+}
+.product_details .status_btn ul {
+  width: 95%;
+}
+.product_details .status_btn ul li {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  background: rgb(247, 118, 108);
+  margin: 7px;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+.product_details .status_btn ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.product_box {
+  width: 95%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #313030;
+  margin: 0 auto 10px auto;
+}/*# sourceMappingURL=style.css.map */
